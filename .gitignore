@@ -128,4 +128,4 @@ logs/
 plot_iter.py
 *.svg
 
-launch.py
+open_api_key.txt

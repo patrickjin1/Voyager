@@ -4,7 +4,9 @@ from voyager import Voyager
 # Change this to the port used when opening to LAN
 mc_port = ...
 
-openai_api_key = 'YOUR_API_KEY'
+key_file = open('open_api_key.txt')
+openai_api_key = key_file.readline()
+key_file.close()
 
 voyager = Voyager(
     mc_port=mc_port,
